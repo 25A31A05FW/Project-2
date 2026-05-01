@@ -1,0 +1,97 @@
+🌦️ Methodology: Weather Dashboard in C++
+1. 📌 Problem Definition
+
+Design a console-based (or simple GUI) application that:
+
+Displays current weather information
+Allows users to search weather by city
+Shows details like temperature, humidity, and conditions
+2. 🎯 Objectives
+Learn C++ fundamentals (structures, functions, file handling, APIs)
+Understand real-time data fetching (optional but recommended)
+Build a user-friendly interface (CLI or basic GUI)
+3. 🧠 System Design
+Input:
+City name (user input)
+Output:
+Temperature
+Weather condition (Sunny, Rainy, etc.)
+Humidity
+Wind speed
+4. ⚙️ Approach / Implementation Steps
+Step 1: Choose Data Source
+
+You have two options:
+
+Option A (Beginner-Friendly):
+Use hardcoded data or a file (CSV/TXT)
+
+Example:
+
+City: Delhi → Temp: 35°C, Humidity: 40%
+Option B (Advanced):
+Use a weather API like OpenWeatherMap API
+Fetch real-time data using HTTP requests (requires extra libraries like libcurl)
+Step 2: Program Structure
+
+Use modular design:
+
+main() → Controls flow
+getWeatherData() → Fetch data
+displayWeather() → Output formatting
+searchCity() → Find city data
+Step 3: Data Representation
+
+Use struct:
+
+struct Weather {
+    string city;
+    float temperature;
+    int humidity;
+    string condition;
+};
+Step 4: User Interface
+Console Menu Example:
+1. Search Weather by City
+2. Display All Data
+3. Exit
+Step 5: File Handling (if not using API)
+
+Store data in a file:
+
+cities.txt
+Read using ifstream
+Step 6: API Integration (Optional Advanced)
+Register on OpenWeatherMap
+Get API key
+Use:
+HTTP request
+JSON parsing (library like nlohmann/json)
+Step 7: Error Handling
+Invalid city name
+File not found
+API failure
+5. 🧪 Testing Strategy
+Test with:
+Valid city
+Invalid city
+Empty input
+Check formatting and correctness
+6. 📊 Tools & Technologies
+Language: C++
+Compiler: GCC / Turbo C++ / Code::Blocks
+Optional Libraries:
+libcurl (for API)
+JSON parser
+7. 🚀 Future Enhancements
+Add GUI (using Qt or similar frameworks)
+Show weather forecast (next 5 days)
+Add graphs or charts
+Auto-detect location
+8. 📄 Conclusion
+
+This project demonstrates:
+
+Core C++ programming skills
+Data handling
+(Optional) real-time API integration
