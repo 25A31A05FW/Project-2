@@ -1,0 +1,28 @@
+✅ Algorithm: Weather Dashboard App
+Start
+Initialize application
+Load UI (search bar, display area)
+Set API key for weather service
+User inputs city name
+Read input from search box
+Validate input
+If empty → show error message
+Else → continue
+Send request to Weather API
+Use city name
+Example: OpenWeather API
+Receive API response
+If error (city not found / network issue) → Display error message
+Else → continue
+Extract weather data
+Temperature
+Humidity
+Weather condition
+Wind speed
+Display data on dashboard
+Show temperature
+Show weather icon
+Show additional details
+Ask for next input (optional loop)
+User can search another city
+End
